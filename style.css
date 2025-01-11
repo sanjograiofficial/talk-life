@@ -1,0 +1,75 @@
+:root{
+    --color: #000333; 
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.logo{
+    background-image: url('logo.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    position: absolute;
+}
+
+#post-section{
+    margin: 0 auto;    
+    padding: 20px;
+    background-color: var(--color);
+    color: azure;
+    
+}
+#post-thing{
+    width: 80%;
+    margin: 0 auto;
+}
+#post-thing #post{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+}
+#post-thing .post-btn{
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+.post-text{
+    text-align: center;
+}
+.profile{
+    background-image: url("profile.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid blue;
+    height: 50px;
+    width: 50px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
