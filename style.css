@@ -1,46 +1,52 @@
 :root{
     --color: #000333; 
 }
+*{
+    border: 1px solid black;
+}
 body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+.outer{
+    display: flex;
+}
 nav{
+    display: flex;
+    flex-direction: column;
     background-color: #333;
     padding: 10px;
     text-align: center;
-    position: fixed;
+    width: 20%;
+}
+nav ul{
     width: 100%;
-    bottom: 0;
+    padding: 0;
+    margin: 0;
 }
-nav li{
+nav ul li{
     list-style: none;
-    display: inline-block;
 }
-nav ul li a{
-    color: white;
-    text-decoration: none;
+nav ul li a button{
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
     padding: 10px;
-}
-
-.logo{
-    background-image: url('logo.png');
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid red;
-    position: absolute;
+    border-bottom: 1px solid black;
+    background-color: transparent;
 }
 
 #post-section{
     margin: 0 auto;    
     padding: 20px;
     background-color: var(--color);
-    color: azure;
-    
+    color: azure;   
 }
+.container{
+    flex: 1;
+}
+
 #post-thing{
     width: 80%;
     margin: 0 auto;
@@ -69,7 +75,28 @@ nav ul li a{
 }
 .head{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding: 5px;
     gap: 5px;
+}
+.content{
+    width: 50%;
+}
+.contents{
+    width: 50%;
+    margin: 0 auto
+}
+.image-post{
+    width: 100%;
+    height: 500px;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+.options button{
+    padding: 5px;
+    font-size: 1.5rem;
 }
