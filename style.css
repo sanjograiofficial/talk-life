@@ -38,6 +38,9 @@ nav ul li a button {
   border-bottom: 1px solid white;
   background-color: transparent;
 }
+nav ul li a button:hover {
+  background-color: #616161;
+}
 
 #post-section {
   margin: 0 auto;
@@ -110,6 +113,9 @@ fieldset input::placeholder {
   border-radius: 12px;
   background-color: #00c896;
 }
+#post-thing .post-btn:hover {
+  background-color: #008e6a;
+}
 .post-text {
   text-align: center;
 }
@@ -157,13 +163,18 @@ fieldset input::placeholder {
   height: 500px;
 }
 .options {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 5px;
 }
 .options button {
   padding: 5px;
   font-size: 1.5rem;
+  background: transparent;
+  cursor: pointer;
+}
+.options button:hover {
+  background-color: #343434;
 }
 .app {
   display: flex;
@@ -192,4 +203,7 @@ fieldset input::placeholder {
   margin: 5px;
   border-bottom: 1px solid white;
   background-color: transparent;
+}
+.app ul li a button:hover{
+    background-color: #616161;
 }
