@@ -1,102 +1,195 @@
-:root{
-    --color: #000333; 
+:root {
+  --color: #000333;
 }
-*{
-    border: 1px solid black;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
 }
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+.outer {
+  display: flex;
 }
-.outer{
-    display: flex;
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+  border-right: 1px solid white;
 }
-nav{
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    width: 20%;
+nav ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-nav ul{
-    width: 100%;
-    padding: 0;
-    margin: 0;
+nav ul li {
+  list-style: none;
 }
-nav ul li{
-    list-style: none;
-}
-nav ul li a button{
-    color: #fff;
-    width: 100%;
-    cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid black;
-    background-color: transparent;
-}
-
-#post-section{
-    margin: 0 auto;    
-    padding: 20px;
-    background-color: var(--color);
-    color: azure;   
-}
-.container{
-    flex: 1;
+nav ul li a button {
+  font-size: 1.5rem;
+  color: #f2ecff;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  border-bottom: 1px solid white;
+  background-color: transparent;
 }
 
-#post-thing{
-    width: 80%;
-    margin: 0 auto;
+#post-section {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #616161;
+  color: F2ECFF;
 }
-#post-thing #post{
-    margin: 0 auto;
-    display: block;
-    width: 90%;
+.container {
+  flex: 1;
 }
-#post-thing .post-btn{
-    display: block;
-    width: 60px;
-    margin: 0 auto;
-    background-color: aqua;
+
+#post-thing {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
 }
-.post-text{
-    text-align: center;
+#post-thing .input-field {
+  display: flex;
 }
-.profile{
-    background-image: url("profile.jpg");
-    background-size: cover;
-    border-radius: 50%;
-    border: 1px solid blue;
-    height: 50px;
-    width: 50px;
+#post-thing #post {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
 }
-.head{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 5px;
-    gap: 5px;
+.post-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
 }
-.content{
-    width: 50%;
+fieldset {
+  border: none;
 }
-.contents{
-    width: 50%;
-    margin: 0 auto
+fieldset input {
+  background: transparent;
+  color: #f2ecff;
+  border: none;
+  border-bottom: 1px solid white;
 }
-.image-post{
-    width: 100%;
-    height: 500px;
+fieldset input::placeholder {
+  color: #f2ecff;
 }
-.options{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px;
+.post-buttons button,
+.post-buttons i {
+  cursor: pointer;
 }
-.options button{
-    padding: 5px;
-    font-size: 1.5rem;
+.util {
+  margin-left: 10px;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gif {
+  all: unset;
+  color: black;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px;
+  height: 100%;
+}
+.post-buttons i {
+  color: black;
+  font-size: 1.5rem;
+}
+#post-thing .post-btn {
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 12px;
+  background-color: #00c896;
+}
+.post-text {
+  text-align: center;
+}
+.profile {
+  background-image: url("profile.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid #00c896;
+  height: 50px;
+  width: 50px;
+}
+.head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  border-bottom: 1px solid black;
+}
+.content {
+  width: 50%;
+}
+
+.contents {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #616161;
+  color: #f2ecff;
+}
+.post-content {
+  width: 95%;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin: 0 auto;
+}
+.content-text {
+  width: 100%;
+  height: 1rem;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+.image-post {
+  width: 100%;
+  height: 500px;
+}
+.options {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.options button {
+  padding: 5px;
+  font-size: 1.5rem;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+  border-left: 1px solid white;
+}
+.app ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.app ul li {
+  list-style: none;
+}
+.app ul li a button {
+  font-size: 1.5rem;
+  color: #f2ecff;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  border-bottom: 1px solid white;
+  background-color: transparent;
 }
