@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Talking</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="apps.css" />
+    <link rel="stylesheet" href="nav.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -15,83 +17,89 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html"><button>Home</button></a>
+
+            <h1 class="list-top">Talk Life</h1>
           </li>
           <li>
-            <a href="chat.html"><button>Chat</button></a>
+            <a href="./index.html" class="nav-links"
+              ><i class="fa-solid fa-house"></i
+              ><span class="list-text">Home</span></a
+            >
           </li>
           <li>
-            <a href="settings.html"><button>Settings</button></a>
+            <a href="chat.html" class="nav-links"
+              ><i class="fa-solid fa-inbox"></i
+              ><span class="list-text">Chat</span></a
+            >
+          </li>
+          <li>
+            <a href="chat.html" class="nav-links"
+              ><i class="fa-solid fa-plus"></i
+              ><span class="list-text">Post</span></a
+            >
+          </li>
+          <li>
+            <a href="chat.html" class="nav-links"
+              ><i class="fa-solid fa-bell"></i
+              ><span class="list-text">Notifications</span></a
+            >
+          </li>
+          <li>
+            <a href="chat.html" class="nav-links"
+              ><i class="fa-solid fa-circle-user"></i
+              ><span class="list-text">Profile</span></a
+            >
+          </li>
+          <li>
+            <a href="settings.html" class="nav-links"
+              ><i class="fa-solid fa-gear"></i
+              ><span class="list-text">Settings</span></a
+            >
+          </li>
+          <li>
+            <a href="chat.html" class="nav-links"
+              ><i class="fa-solid fa-right-from-bracket"></i
+              ><span class="list-text">Logout</span></a
+            >
           </li>
         </ul>
       </nav>
-      <div class="container">
-        <section id="post-section">
-          <fieldset id="post-thing">
-            <legend class="post-text">Post Something</legend>
-            <div class="input-field">
-              <div class="profile"></div>
-              <input
-                type="text"
-                name="post"
-                id="post"
-                placeholder="Post Something..."
-              />
-            </div>
-            <div class="post-buttons">
-              <div class="util">
-                <i class="fa-solid fa-image" title="image"></i>
-                <button class="gif" title="gif">GIF</button>
-                <i class="fa-solid fa-bars-progress" title="poll"></i>
-                <i class="fa-regular fa-face-smile" title="emoji"></i>
-              </div>
-              <button type="button" class="post-btn">Post</button>
-            </div>
-          </fieldset>
-        </section>
-        <hr />
-        <section id="content">
-          <div class="contents">
-            <div class="head">
-              <div class="profile"></div>
-              <div class="name">Name</div>
-            </div>
-            <div class="post-content">
-              <div class="content-text">My first post.</div>
-              <div class="image-post"></div>
-            </div>
-            <hr />
-            <div class="options">
-              <button type="button">React</button>
-              <button type="button">Comment</button>
-              <button type="button">Share</button>
-            </div>
-          </div>
-        </section>
+      <div class="wrapper">
+        <iframe
+          src="./pages/home.html"
+          frameborder="0"
+          class="view"
+          name="app"
+        ></iframe>
       </div>
-      <div class="app">
+      <!-- <div class="app">
         <h1>Apps</h1>
         <ul>
           <li>
-            <a href="index.html"><button>Facebook</button></a>
+            <a href="https://www.facebook.com" target="app"
+              ><button class="fb">Facebook</button></a
+            >
           </li>
           <li>
-            <a href="chat.html"><button>Instagram</button></a>
+            <a href="https://instagram.com" target="app"
+              ><button class="">Instagram</button></a
+            >
           </li>
           <li>
-            <a href="settings.html"><button>Discord</button></a>
+            <a href="https://discord.com" target="app"
+              ><button>Discord</button></a
+            >
           </li>
           <li>
-            <a href="settings.html"><button>Twitter</button></a>
+            <a href="https://x.com" target="app"><button>Twitter</button></a>
           </li>
           <li>
-            <a href="settings.html"><button>Snapchat</button></a>
-          </li>
-          <li>
-            <a href="settings.html"><button>Tiktok</button></a>
+            <a href="https://tiktok.com" target="app"
+              ><button>Tiktok</button></a
+            >
           </li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>
