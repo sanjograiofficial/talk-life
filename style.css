@@ -5,41 +5,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
   background-color: #333;
 }
 .outer {
   display: flex;
-}
-nav {
-  display: flex;
-  flex-direction: column;
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
-  width: 20%;
-  border-right: 1px solid white;
-}
-nav ul {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  list-style: none;
-}
-nav ul li a button {
-  font-size: 1.5rem;
-  color: #f2ecff;
-  width: 100%;
-  cursor: pointer;
-  padding: 10px;
-  border: none;
-  margin: 5px;
-  border-bottom: 1px solid white;
-  background-color: transparent;
-}
-nav ul li a button:hover {
-  background-color: #616161;
+  height: 100%;
+  overflow: hidden;
 }
 
 #post-section {
@@ -48,10 +20,22 @@ nav ul li a button:hover {
   background-color: #616161;
   color: F2ECFF;
 }
-.container {
-  flex: 1;
+.wrapper {
+  width: 100%;
 }
-
+.wrapper iframe {
+  height: 100%;
+  width: 100%;
+}
+.wrapper iframe::-webkit-scrollbar {
+  width: 0.25rem;
+}
+.wrapper iframe::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+.wrapper iframe::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
 #post-thing {
   width: 60%;
   margin: 0 auto;
@@ -204,6 +188,6 @@ fieldset input::placeholder {
   border-bottom: 1px solid white;
   background-color: transparent;
 }
-.app ul li a button:hover{
-    background-color: #616161;
+.app ul li a button:hover {
+  background-color: #616161;
 }
