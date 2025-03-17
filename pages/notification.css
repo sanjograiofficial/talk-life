@@ -1,0 +1,33 @@
+body {
+  margin-top: 20px;
+  background-color: #333;
+}
+.dropdown-list-image {
+  position: relative;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.dropdown-list-image img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.btn-light {
+  color: #2cdd9b;
+  background-color: #e5f7f0;
+  border-color: #d8f7eb;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+.rounded {
+  background-color: #333;
+}
+.box-body div {
+  background-color: #333;
+  color: whitesmoke;
+}
+.box-body div .small{
+    color: rgba(245, 245, 245, 0.718);
+}
