@@ -1,1 +1,1 @@
-"Talk Life", an app that aims to integrate multiple social medias.
+"Talk Life", a social media app.
